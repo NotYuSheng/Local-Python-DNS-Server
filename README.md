@@ -12,7 +12,7 @@ The domain-to-IP mappings are defined in the dns_server.py file. Update the DOMA
 # DNS server configuration
 DOMAIN_TO_IP = {
     'a.com.': '192.168.1.100',
-    'b.com.': '192.168.1.100',
+    'b.com.': '192.168.1.101',
 }
 ```
 
