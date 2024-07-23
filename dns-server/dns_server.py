@@ -4,14 +4,10 @@ from dnslib import DNSRecord, QTYPE, RR, A, DNSHeader
 import socket
 import socketserver
 
-# Get the local IP address
-hostname = socket.gethostname()
-local_ip = socket.gethostbyname(hostname)
-
 # DNS server configuration
 DOMAIN_TO_IP = {
-    'a.com.': local_ip,
-    'b.com.': local_ip,
+    'a.com.': '192.168.1.100',
+    'b.com.': '192.168.1.101',
 }
 
 class DNSHandler(socketserver.BaseRequestHandler):
