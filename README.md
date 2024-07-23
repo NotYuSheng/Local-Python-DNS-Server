@@ -34,4 +34,4 @@ docker-compose up
 ```
 
 ## Acknowledgements
-- [Hackernoon article on setting up a local DNS server with Python](https://hackernoon.com/how-to-set-up-a-local-dns-server-with-python) Python code source.
+- [Hackernoon - How to Set Up a Local DNS Server With Python](https://hackernoon.com/how-to-set-up-a-local-dns-server-with-python)
