@@ -9,10 +9,9 @@ Dockerized simple local DNS server implemented in Python.
 ## Configuration
 The domain-to-IP mappings are defined in the `config.json` file. Update this file with your desired mappings:
 ```
-# DNS server configuration
-DOMAIN_TO_IP = {
-    'a.com.': '192.168.1.100',
-    'b.com.': '192.168.1.101',
+{
+    "a.com.": "192.168.1.100",
+    "b.com.": "192.168.1.101"
 }
 ```
 
