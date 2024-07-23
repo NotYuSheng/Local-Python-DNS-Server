@@ -1,14 +1,17 @@
 # Taken from https://hackernoon.com/how-to-set-up-a-local-dns-server-with-python
 
+import json
 from dnslib import DNSRecord, QTYPE, RR, A, DNSHeader
 import socket
 import socketserver
 
+# Load the configuration
+with open('config.json') as config_file:
+    DOMAIN_TO_IP = json.load(config_file)
+
 # DNS server configuration
-DOMAIN_TO_IP = {
-    'ai-arena.com.': "192.168.1.101:8501",
-    'chatbot.com.': "192.168.1.102:3000",
-}
+for domain in DOMAIN_TO_IP:
+    DOMAIN_TO_IP[domain] = local_ip
 
 class DNSHandler(socketserver.BaseRequestHandler):
     def handle(self):

@@ -1,13 +1,13 @@
 # Local Python DNS Server
 
-A Dockerized simple local DNS server implemented in Python.
+Dockerized simple local DNS server implemented in Python.
 
 ## Host requirement(s)
 - **Docker**: [[Installation Guide](https://docs.docker.com/engine/install/)]
 - **Docker Compose**: [[Installation Guide](https://docs.docker.com/compose/install/)]
 
 ## Configuration
-The domain-to-IP mappings are defined in the dns_server.py file. Update the DOMAIN_TO_IP dictionary with your desired mappings:
+The domain-to-IP mappings are defined in the `config.json` file. Update this file with your desired mappings:
 ```
 # DNS server configuration
 DOMAIN_TO_IP = {
@@ -33,5 +33,5 @@ docker-compose build
 docker-compose up
 ```
 
-## Acknowledgements
+## Acknowledgement(s)
 - [Hackernoon - How to Set Up a Local DNS Server With Python](https://hackernoon.com/how-to-set-up-a-local-dns-server-with-python)
