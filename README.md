@@ -1,6 +1,6 @@
 # Local Python DNS Server
 
-A Dockerized simple local DNS server implemented in Python.
+Dockerized simple local DNS server implemented in Python.
 
 ## Host requirement(s)
 - **Docker**: [[Installation Guide](https://docs.docker.com/engine/install/)]
