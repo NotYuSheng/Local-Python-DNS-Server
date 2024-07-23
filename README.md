@@ -7,8 +7,8 @@ Dockerized simple local DNS server implemented in Python.
 - **Docker Compose**: [[Installation Guide](https://docs.docker.com/compose/install/)]
 
 ## Configuration
-The domain-to-IP mappings are defined in the dns_server.py file. Update the DOMAIN_TO_IP dictionary with your desired mappings:
-```
+The domain-to-IP mappings are defined in the `config.json` file. Update this file with your desired mappings:
+```json
 # DNS server configuration
 DOMAIN_TO_IP = {
     'a.com.': '192.168.1.100',
