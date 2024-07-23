@@ -6,8 +6,8 @@ import socketserver
 
 # DNS server configuration
 DOMAIN_TO_IP = {
-    'a.com.': '192.168.1.100',
-    'b.com.': '192.168.1.101',
+    'ai-arena.com.': "192.168.1.101:8501",
+    'chatbot.com.': "192.168.1.102:3000",
 }
 
 class DNSHandler(socketserver.BaseRequestHandler):
